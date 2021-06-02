@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>OKGO! workout</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCpbAGToAoPXuFUaAtdHue8kIOl2bn2usc",
+      authDomain: "okgo-81944.firebaseapp.com",
+      projectId: "okgo-81944",
+      storageBucket: "okgo-81944.appspot.com",
+      messagingSenderId: "505302396829",
+      appId: "1:505302396829:web:b1df52357b9ec99e9b4974",
+      measurementId: "G-N0FVZS8HQB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</head>
+
+<body>
+  <div class="signin_section">
+    <div class="content">
+
+      <h1>Create an account</h1>
+      <input type="text" name="" value="" placeholder="Email">
+      <input type="text" name="" value="" placeholder="Name">
+      <input type="text" name="" value="" placeholder="Password">
+      <input type="text" name="" value="" placeholder="Confirm password">
+      <a href="success.html"><button class="singin_button" type="button" name="button">Sign up</button></a>
+      <br>
+    <div class="break">
+
+    </div>
+      <section id="whenSignedOut">
+      <button id="signInBtn" class="google_button"> <i class="fab fa-google"></i>  Sign Up with Gmail</button>
+      </section>
+      <p>Already have an account <a href="login.html"><span>Sign in</span></p></a>
+
+    </div>
+  </div>
+
+
+<section id="whenSignedIn" hidden="true">
+  <div id="userDetails">
+    <button id="signOutBtn">Sign out</button>
+
+  </div>
+
+</section>
+
+  <script type="text/javascript" src="app.js">
+
+  </script>
+</body>
+
+</html>
